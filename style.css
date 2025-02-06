@@ -1,0 +1,111 @@
+
+/* Basic CSS Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    color: #ff9800;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+header nav a {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ff9800;
+}
+
+#hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+#hero .btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#hero .btn:hover {
+    background: #e67e22;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.menu-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #ff9800;
+    margin: 1rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
